@@ -35,5 +35,12 @@ contract MictaExecuteOrder {
             _data,
             (address, bytes)
         );
+    lastSender = user;
+    lastData = hash_digest;
+}
+
+function executeOrder() public {
+// TODO: Implement the COW Swap contracts
+    
 }
 }
