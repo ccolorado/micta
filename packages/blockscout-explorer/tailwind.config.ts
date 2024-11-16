@@ -9,11 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        one: "#444",
-        two: "#777",
-        three: "#999",
-        four: "#aaa",
-        five: "#bbb",
+        one: "#320c2e",
+        two: "#79d0bc",
+        three: "#49313e",
+        four: "#3a7276",
+        five: "#b15c31",
         drop: "#777",
         background: "#333",
         foreground: "var(--foreground)",
@@ -22,3 +22,6 @@ export default {
   },
   plugins: [],
 } satisfies Config;
+
+
+				
