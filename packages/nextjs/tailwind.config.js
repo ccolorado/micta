@@ -9,6 +9,11 @@ module.exports = {
   daisyui: {
     themes: [
       {
+        #FF69B4 - A classic, bright hot pink
+#FF1493 - A deep, vibrant hot pink
+#FF6FFF - A light, airy hot pink
+#DDA0DD - A pale, delicate hot pink
+#EE82EE - A medium, versatile hot pink
         light: {
           primary: "#93BBFB",
           "primary-content": "#212638",

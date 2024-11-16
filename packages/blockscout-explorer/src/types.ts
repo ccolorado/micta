@@ -1,17 +1,29 @@
-export const blockscout = {
-  baseUrl: "https://explorer.kinto.xyz/api/v2/",
-  queries: {
-    smartcontractsQuery: "smart-contracts?q=proxy&filter=vyper%20%7C%20solidity%20%7C%20yul",
-  }
+
+export interface Order {
+  sellToken: string;
+  buyToken: string;
+  sellAmount: string;
+  buyAmount: string;
+  validTo: number;
+  appData: string;
+  feeAmount: string;
+  kind: OrderKind;
+  partiallyFillable: boolean;
+  sellTokenBalance: OrderBalance;
+  buyTokenBalance: OrderBalance;
+  chain: string;
 }
 
-
-export const paymaster = "0x1842a4EFf3eFd24c50B63c3CF89cECEe245Fc2bd"
-
-
-export function addressesQuery(address: string) {
-  return `https://explorer.kinto.xyz/api/v2/addresses/${address}/transactions?filter=to%20%7C%20from`;
+export enum OrderKind {
+  SELL,
+  BUY,
 }
+
+export enum OrderBalance {
+  ERC20,
+  ETH,
+}
+
 
 export interface Transaction {
   priority_fee: string;

@@ -1,4 +1,4 @@
-import { Transaction } from '@/blockscoutConfig';
+import { Transaction } from '@/types';
 import React from 'react';
 
 
@@ -12,7 +12,7 @@ const TransactionTable = (props: Props) => {
         <div className='text-sm'>
             <div className='flex flex-col'>
                 {props.transactions.map((transaction, index) => (
-                    <div key={index} className='flex flex-col border p-4 m-2 justify-between'>
+                    <div key={index} className='flex flex-col border p-4 m-2 justify-between shadow-drop shadow-[8px_0px_0px_0px]'>
                         <div className='px-4'>block: {transaction.block_number}</div>
                         <div className='px-4'>method: {transaction.decoded_input.method_call}</div>
                         <div className='px-4'>from: {transaction.from.hash}</div>
