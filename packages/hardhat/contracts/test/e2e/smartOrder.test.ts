@@ -10,7 +10,7 @@ import {
   SigningScheme,
   TypedDataDomain,
   domain,
-} from "../../src/ts";
+} from "../../../ts";
 import { decodeOrder } from "../encoding";
 
 import { deployTestContracts } from "./fixture";
