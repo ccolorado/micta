@@ -86,11 +86,11 @@ devDependencies:
     specifier: ~2.13.1
     version: 2.13.1(ts-node@10.9.2)(typescript@5.5.4)
   hardhat-deploy:
-    specifier: ~0.12.4
-    version: 0.12.4
+    specifier: ~0.11.45
+    version: 0.11.45
   hardhat-deploy-ethers:
     specifier: ~0.4.2
-    version: 0.4.2(@nomicfoundation/hardhat-ethers@3.0.8)(hardhat-deploy@0.12.4)(hardhat@2.13.1)
+    version: 0.4.2(@nomicfoundation/hardhat-ethers@3.0.8)(hardhat-deploy@0.11.45)(hardhat@2.13.1)
   hardhat-gas-reporter:
     specifier: ~1.0.10
     version: 1.0.10(hardhat@2.13.1)
@@ -2803,7 +2803,7 @@ packages:
       uglify-js: 3.19.3
     dev: true
 
-  /hardhat-deploy-ethers@0.4.2(@nomicfoundation/hardhat-ethers@3.0.8)(hardhat-deploy@0.12.4)(hardhat@2.13.1):
+  /hardhat-deploy-ethers@0.4.2(@nomicfoundation/hardhat-ethers@3.0.8)(hardhat-deploy@0.11.45)(hardhat@2.13.1):
     resolution: {integrity: sha512-AskNH/XRYYYqPT94MvO5s1yMi+/QvoNjS4oU5VcVqfDU99kgpGETl+uIYHIrSXtH5sy7J6gyVjpRMf4x0tjLSQ==}
     peerDependencies:
       '@nomicfoundation/hardhat-ethers': ^3.0.2
@@ -2812,11 +2812,11 @@ packages:
     dependencies:
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@5.7.2)(hardhat@2.13.1)
       hardhat: 2.13.1(ts-node@10.9.2)(typescript@5.5.4)
-      hardhat-deploy: 0.12.4
+      hardhat-deploy: 0.11.45
     dev: true
 
-  /hardhat-deploy@0.12.4:
-    resolution: {integrity: sha512-bYO8DIyeGxZWlhnMoCBon9HNZb6ji0jQn7ngP1t5UmGhC8rQYhji7B73qETMOFhzt5ECZPr+U52duj3nubsqdQ==}
+  /hardhat-deploy@0.11.45:
+    resolution: {integrity: sha512-aC8UNaq3JcORnEUIwV945iJuvBwi65tjHVDU3v6mOcqik7WAzHVCJ7cwmkkipsHrWysrB5YvGF1q9S1vIph83w==}
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/abstract-signer': 5.7.0
@@ -2841,7 +2841,7 @@ packages:
       match-all: 1.2.6
       murmur-128: 0.2.1
       qs: 6.13.0
-      zksync-ethers: 5.10.0(ethers@5.7.2)
+      zksync-web3: 0.14.4(ethers@5.7.2)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -4786,11 +4786,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zksync-ethers@5.10.0(ethers@5.7.2):
-    resolution: {integrity: sha512-OAjTGAHF9wbdkRGkj7XZuF/a1Sk/FVbwH4pmLjAKlR7mJ7sQtQhBhrPU2dCc67xLaNvEESPfwil19ES5wooYFg==}
-    engines: {node: '>=16.0.0'}
+  /zksync-web3@0.14.4(ethers@5.7.2):
+    resolution: {integrity: sha512-kYehMD/S6Uhe1g434UnaMN+sBr9nQm23Ywn0EUP5BfQCsbjcr3ORuS68PosZw8xUTu3pac7G6YMSnNHk+fwzvg==}
+    deprecated: This package has been deprecated in favor of zksync-ethers@5.0.0
     peerDependencies:
-      ethers: ~5.7.0
+      ethers: ^5.7.0
     dependencies:
       ethers: 5.7.2
     dev: true
