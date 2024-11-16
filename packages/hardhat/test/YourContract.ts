@@ -1,7 +1,7 @@
 import ERC20 from "@openzeppelin/contracts/build/contracts/ERC20PresetMinterPauser.json";
 import { expect } from "chai";
 import { Contract, ContractFactory, Wallet } from "ethers";
-import { ethers } from "hardhat";
+import { deployments, ethers } from "hardhat";
 
 import {
   OrderBalance,
@@ -10,7 +10,7 @@ import {
   SigningScheme,
   TypedDataDomain,
   domain,
-} from "./ts";
+} from "../ts";
 import { decodeOrder } from "./encoding";
 
 import { deployTestContracts } from "./fixture";
@@ -29,11 +29,12 @@ describe("E2E: Dumb Smart Order", () => {
   let SmartSellOrder: ContractFactory;
 
   beforeEach(async () => {
-    const deployment = await deployTestContracts();
+
+    const settlement = await deployments.fixture(['']);
 
     ({
       deployer,
-      settlement,
+      ,
       vaultRelayer,
       wallets: [solver, ...traders],
     } = deployment);
@@ -45,8 +46,8 @@ describe("E2E: Dumb Smart Order", () => {
     domainSeparator = domain(chainId, settlement.address);
 
     tokens = [
-      await waffle.deployContract(deployer, ERC20, ["T0", 18]),
-      await waffle.deployContract(deployer, ERC20, ["T1", 18]),
+      await deployContract(deployer, ERC20, ["T0", 18]),
+      await deployContract(deployer, ERC20, ["T1", 18]),
     ];
 
     SmartSellOrder = await ethers.getContractFactory("SmartSellOrder");

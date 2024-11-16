@@ -20,10 +20,10 @@ export interface TestDeployment {
 }
 
 export const deployTestContracts: () => Promise<TestDeployment> = deployments.createFixture(
-  async ({ deployments, ethers, getNamedAccounts, getUnnamedAccounts, waffle }) => {
+  async ({ deployments, ethers, getNamedAccounts, getUnnamedAccounts }) => {
     const { GPv2AllowListAuthentication, GPv2Settlement, Vault, VaultAuthorizer, WETH } = await deployments.fixture();
 
-    const allWallets = waffle.provider.getWallets();
+    const allWallets = provider.getWallets();
     const { deployer, owner, manager } = await getNamedAccounts();
     const unnamedAccounts = await getUnnamedAccounts();
     const deployerWallet = findAccountWallet(allWallets, deployer);

@@ -1,7 +1,7 @@
 import { BigNumber } from "ethers";
 import { ethers } from "hardhat";
 
-import { Order, OrderBalance, OrderKind } from "./ts";
+import { Order, OrderBalance, OrderKind } from "../ts";
 
 type AbiOrder = [
   string,
