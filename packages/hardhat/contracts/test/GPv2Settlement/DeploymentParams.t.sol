@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8.26;
 
-import {GPv2VaultRelayer} from "src/contracts/GPv2VaultRelayer.sol";
+import {GPv2VaultRelayer} from "contracts/GPv2VaultRelayer.sol";
 import {Bytecode} from "test/libraries/Bytecode.sol";
 
 import {Helper, Vm} from "./Helper.sol";

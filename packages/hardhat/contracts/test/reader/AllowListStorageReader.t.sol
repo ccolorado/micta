@@ -3,8 +3,8 @@ pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
 
-import {GPv2AllowListAuthentication, StorageAccessible} from "src/contracts/GPv2AllowListAuthentication.sol";
-import {AllowListStorageReader} from "src/contracts/reader/AllowListStorageReader.sol";
+import {GPv2AllowListAuthentication, StorageAccessible} from "contracts/GPv2AllowListAuthentication.sol";
+import {AllowListStorageReader} from "contracts/reader/AllowListStorageReader.sol";
 
 contract AllowListStorageReaderTest is Test {
     address private manager = makeAddr("AllowListStorageReaderTest: manager");

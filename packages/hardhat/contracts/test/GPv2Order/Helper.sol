@@ -3,7 +3,7 @@ pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
 
-import {GPv2Order} from "src/contracts/libraries/GPv2Order.sol";
+import {GPv2Order} from "contracts/libraries/GPv2Order.sol";
 
 contract Harness {
     using GPv2Order for GPv2Order.Data;

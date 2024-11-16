@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8;
 
-import {GPv2Order, IERC20} from "src/contracts/libraries/GPv2Trade.sol";
-import {GPv2Signing} from "src/contracts/mixins/GPv2Signing.sol";
+import {GPv2Order, IERC20} from "contracts/libraries/GPv2Trade.sol";
+import {GPv2Signing} from "contracts/mixins/GPv2Signing.sol";
 
 import {Helper} from "./Helper.sol";
 

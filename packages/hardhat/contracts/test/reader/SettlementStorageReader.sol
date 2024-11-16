@@ -3,9 +3,9 @@ pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
 
-import {GPv2AllowListAuthentication} from "src/contracts/GPv2AllowListAuthentication.sol";
-import {GPv2Settlement, IVault, StorageAccessible} from "src/contracts/GPv2Settlement.sol";
-import {SettlementStorageReader} from "src/contracts/reader/SettlementStorageReader.sol";
+import {GPv2AllowListAuthentication} from "contracts/GPv2AllowListAuthentication.sol";
+import {GPv2Settlement, IVault, StorageAccessible} from "contracts/GPv2Settlement.sol";
+import {SettlementStorageReader} from "contracts/reader/SettlementStorageReader.sol";
 
 import {Order} from "test/libraries/Order.sol";
 

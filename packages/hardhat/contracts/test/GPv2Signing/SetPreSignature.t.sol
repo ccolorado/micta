@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8;
 
-import {GPv2Signing} from "src/contracts/mixins/GPv2Signing.sol";
+import {GPv2Signing} from "contracts/mixins/GPv2Signing.sol";
 
 import {Helper} from "./Helper.sol";
 import {Order} from "test/libraries/Order.sol";

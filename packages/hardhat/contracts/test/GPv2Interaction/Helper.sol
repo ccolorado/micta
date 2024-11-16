@@ -3,7 +3,7 @@ pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
 
-import {GPv2Interaction} from "src/contracts/libraries/GPv2Interaction.sol";
+import {GPv2Interaction} from "contracts/libraries/GPv2Interaction.sol";
 
 contract Harness {
     function executeTest(GPv2Interaction.Data calldata interaction) external {

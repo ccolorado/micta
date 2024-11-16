@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8.26;
 
-import {GPv2Interaction, GPv2Order, GPv2Settlement, IERC20} from "src/contracts/GPv2Settlement.sol";
+import {GPv2Interaction, GPv2Order, GPv2Settlement, IERC20} from "contracts/GPv2Settlement.sol";
 
 import {Helper} from "../Helper.sol";
 

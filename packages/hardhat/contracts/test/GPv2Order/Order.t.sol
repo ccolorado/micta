@@ -3,7 +3,7 @@ pragma solidity ^0.8;
 
 import {Helper} from "./Helper.sol";
 
-import {GPv2Order, IERC20} from "src/contracts/libraries/GPv2Order.sol";
+import {GPv2Order, IERC20} from "contracts/libraries/GPv2Order.sol";
 
 import {Helper} from "./Helper.sol";
 import {Eip712} from "test/libraries/Eip712.sol";
