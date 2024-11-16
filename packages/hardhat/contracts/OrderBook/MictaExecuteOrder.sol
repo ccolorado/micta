@@ -2,10 +2,11 @@
 // Deploy on Arbitrum and Ethereum mainnet
 pragma solidity ^0.8.0;
 
+import {VennFirewallConsumer} from "@ironblocks/firewall-consumer/contracts/consumers/VennFirewallConsumer.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {IMailbox} from "@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol";
 
-contract MictaExecuteOrder {
+contract MictaExecuteOrder is VennFirewallConsumer {
     address mailboxHyperlane;
     address lastSender;
     bytes lastData;
@@ -21,7 +22,7 @@ contract MictaExecuteOrder {
     uint32 _origin,
     bytes32 _sender,
     bytes calldata _data
-) external payable virtual {
+) external payable virtual firewallProtected {
     // check sender
     if (msg.sender != mailboxHyperlane) {
             revert();
@@ -40,8 +41,8 @@ contract MictaExecuteOrder {
     lastData = hash_digest;
 }
 
-function executeOrder() public {
+/* function executeOrder() public {
 // TODO: Implement the COW Swap contracts
     
-}
+} */
 }
