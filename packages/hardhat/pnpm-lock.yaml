@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@openzeppelin/contracts':
-    specifier: ~5.0.2
-    version: 5.0.2
+    specifier: 3.4.0-solc-0.7
+    version: 3.4.0-solc-0.7
   '@typechain/ethers-v6':
     specifier: ~0.5.1
     version: 0.5.1(ethers@5.7.2)(typechain@8.3.2)(typescript@5.5.4)
@@ -798,8 +798,8 @@ packages:
       '@nomicfoundation/solidity-analyzer-win32-x64-msvc': 0.1.2
     dev: true
 
-  /@openzeppelin/contracts@5.0.2:
-    resolution: {integrity: sha512-ytPc6eLGcHHnapAZ9S+5qsdomhjo6QBHTDRRBFfTxXIpsicMhVPouPgmUPebZZZGX7vt9USA+Z+0M0dSVtSUEA==}
+  /@openzeppelin/contracts@3.4.0-solc-0.7:
+    resolution: {integrity: sha512-bJz1YgmeKRYVnYZedYSiy5/YmaYTxOhb76ftCseN1z2r4DK7PwCGvRCF2fRavTxAmGkIC/Q5zSy/Dr3OerPw0w==}
     dev: false
 
   /@pkgjs/parseargs@0.11.0:
