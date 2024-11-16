@@ -3,7 +3,7 @@ pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
 
-import {GPv2Transfer, IERC20, IVault} from "src/contracts/libraries/GPv2Transfer.sol";
+import {GPv2Transfer, IERC20, IVault} from "contracts/libraries/GPv2Transfer.sol";
 
 contract Harness {
     function fastTransferFromAccountTest(IVault vault, GPv2Transfer.Data calldata transfer, address recipient)

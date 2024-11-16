@@ -3,7 +3,7 @@ pragma solidity ^0.8.26;
 
 import {Test, Vm, stdJson} from "forge-std/Test.sol";
 
-import {GPv2AllowListAuthentication} from "src/contracts/GPv2AllowListAuthentication.sol";
+import {GPv2AllowListAuthentication} from "contracts/GPv2AllowListAuthentication.sol";
 import {
     GPv2Authentication,
     GPv2Interaction,
@@ -12,10 +12,10 @@ import {
     GPv2Transfer,
     IERC20,
     IVault
-} from "src/contracts/GPv2Settlement.sol";
+} from "contracts/GPv2Settlement.sol";
 
-import {SettlementEncoder} from "test/libraries/encoders/SettlementEncoder.sol";
-import {SwapEncoder} from "test/libraries/encoders/SwapEncoder.sol";
+import {SettlementEncoder} from "../libraries/encoders/SettlementEncoder.sol";
+import {SwapEncoder} from "../libraries/encoders/SwapEncoder.sol";
 
 // solhint-disable func-name-mixedcase
 abstract contract Helper is Test {

@@ -10,7 +10,7 @@ import {
     GPv2Signing,
     GPv2Trade,
     IERC20
-} from "src/contracts/GPv2Settlement.sol";
+} from "contracts/GPv2Settlement.sol";
 
 import {Sign} from "../Sign.sol";
 import {Trade} from "../Trade.sol";

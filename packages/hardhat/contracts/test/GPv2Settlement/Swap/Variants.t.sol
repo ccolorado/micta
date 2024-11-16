@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8;
 
-import {GPv2Order, GPv2Settlement, GPv2Signing, IERC20, IVault} from "src/contracts/GPv2Settlement.sol";
+import {GPv2Order, GPv2Settlement, GPv2Signing, IERC20, IVault} from "contracts/GPv2Settlement.sol";
 
 import {Helper} from "../Helper.sol";
 
-import {Order} from "test/libraries/Order.sol";
-import {SwapEncoder} from "test/libraries/encoders/SwapEncoder.sol";
+import {Order} from "../../libraries/Order.sol";
+import {SwapEncoder} from "../../libraries/encoders/SwapEncoder.sol";
 
 abstract contract Variant is Helper {
     using SwapEncoder for SwapEncoder.State;

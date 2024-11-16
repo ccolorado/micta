@@ -3,7 +3,7 @@ pragma solidity ^0.8;
 
 import {Helper} from "./Helper.sol";
 
-import {GPv2Interaction} from "src/contracts/libraries/GPv2Interaction.sol";
+import {GPv2Interaction} from "contracts/libraries/GPv2Interaction.sol";
 
 // Intentionally empty contract.
 // solhint-disable-next-line no-empty-blocks

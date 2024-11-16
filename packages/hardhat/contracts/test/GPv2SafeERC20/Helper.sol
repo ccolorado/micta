@@ -3,8 +3,8 @@ pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
 
-import {IERC20} from "src/contracts/interfaces/IERC20.sol";
-import {GPv2SafeERC20} from "src/contracts/libraries/GPv2SafeERC20.sol";
+import {IERC20} from "contracts/interfaces/IERC20.sol";
+import {GPv2SafeERC20} from "contracts/libraries/GPv2SafeERC20.sol";
 
 contract Harness {
     using GPv2SafeERC20 for IERC20;

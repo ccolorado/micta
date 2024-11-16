@@ -3,8 +3,8 @@ pragma solidity ^0.8;
 
 import {Test} from "forge-std/Test.sol";
 
-import {GPv2AllowListAuthentication} from "src/contracts/GPv2AllowListAuthentication.sol";
-import {GPv2EIP1967} from "src/contracts/libraries/GPv2EIP1967.sol";
+import {GPv2AllowListAuthentication} from "contracts/GPv2AllowListAuthentication.sol";
+import {GPv2EIP1967} from "contracts/libraries/GPv2EIP1967.sol";
 
 contract GPv2AllowListAuthenticationHarness is GPv2AllowListAuthentication {
     constructor(address owner) {

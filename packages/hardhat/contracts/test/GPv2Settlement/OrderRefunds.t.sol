@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8;
 
-import {GPv2Order} from "src/contracts/libraries/GPv2Order.sol";
+import {GPv2Order} from "contracts/libraries/GPv2Order.sol";
 
 import {Helper} from "./Helper.sol";
-import {Order} from "test/libraries/Order.sol";
+import {Order} from "../libraries/Order.sol";
 
 enum FreeFunctionVariant {
     FreeFilledAmountStorage,

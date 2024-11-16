@@ -3,7 +3,7 @@ pragma solidity ^0.8;
 
 import {SettlementEncoder} from "./encoders/SettlementEncoder.sol";
 import {SwapEncoder} from "./encoders/SwapEncoder.sol";
-import {GPv2Settlement} from "src/contracts/GPv2Settlement.sol";
+import {GPv2Settlement} from "contracts/GPv2Settlement.sol";
 
 library Settlement {
     function settle(GPv2Settlement settler, SettlementEncoder.EncodedSettlement memory settlement) internal {

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8.26;
 
-import {GPv2Interaction, GPv2Order, GPv2Settlement, IERC20} from "src/contracts/GPv2Settlement.sol";
+import {GPv2Interaction, GPv2Order, GPv2Settlement, IERC20} from "contracts/GPv2Settlement.sol";
 
 import {Helper} from "../Helper.sol";
 
-import {Order} from "test/libraries/Order.sol";
-import {GPv2Signing, Sign} from "test/libraries/Sign.sol";
-import {Trade} from "test/libraries/Trade.sol";
+import {Order} from "../../libraries/Order.sol";
+import {GPv2Signing, Sign} from "../../libraries/Sign.sol";
+import {Trade} from "../../libraries/Trade.sol";
 
-import {SettlementEncoder} from "test/libraries/encoders/SettlementEncoder.sol";
-import {SwapEncoder} from "test/libraries/encoders/SwapEncoder.sol";
+import {SettlementEncoder} from "../../libraries/encoders/SettlementEncoder.sol";
+import {SwapEncoder} from "../../libraries/encoders/SwapEncoder.sol";
 
 // solhint-disable func-name-mixedcase
 contract Reentrancy is Helper {

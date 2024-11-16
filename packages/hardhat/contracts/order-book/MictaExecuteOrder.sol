@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 // Deploy on Arbitrum and Ethereum mainnet
-pragma solidity ^0.8.0;
+pragma solidity >=0.7.0<0.9.0;
 
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {IERC20} from "../interfaces/IERC20.sol";
 import {IMailbox} from "@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol";
 
 contract MictaExecuteOrder {

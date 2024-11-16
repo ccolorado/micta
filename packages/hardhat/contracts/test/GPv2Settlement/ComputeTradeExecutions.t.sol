@@ -3,14 +3,14 @@ pragma solidity ^0.8.26;
 
 import {Vm} from "forge-std/Test.sol";
 
-import {GPv2Settlement} from "src/contracts/GPv2Settlement.sol";
-import {GPv2Order, IERC20} from "src/contracts/libraries/GPv2Order.sol";
-import {GPv2Signing} from "src/contracts/mixins/GPv2Signing.sol";
+import {GPv2Settlement} from "contracts/GPv2Settlement.sol";
+import {GPv2Order, IERC20} from "contracts/libraries/GPv2Order.sol";
+import {GPv2Signing} from "contracts/mixins/GPv2Signing.sol";
 
 import {GPv2Transfer, Helper, SettlementEncoder} from "./Helper.sol";
 
-import {Order} from "test/libraries/Order.sol";
-import {Registry, TokenRegistry} from "test/libraries/encoders/TokenRegistry.sol";
+import {Order} from "../libraries/Order.sol";
+import {Registry, TokenRegistry} from "../libraries/encoders/TokenRegistry.sol";
 
 abstract contract BaseComputeTradeExecutions is Helper {
     using TokenRegistry for TokenRegistry.State;

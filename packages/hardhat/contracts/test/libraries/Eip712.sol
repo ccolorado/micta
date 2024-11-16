@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8;
 
-import {GPv2Order} from "src/contracts/libraries/GPv2Order.sol";
+import {GPv2Order} from "contracts/libraries/GPv2Order.sol";
 
 library Eip712 {
     /// EIP-712 domain information (a.k.a. "domain separator"). The salt

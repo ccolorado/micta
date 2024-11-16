@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8;
 
-import {GPv2Order} from "src/contracts/libraries/GPv2Trade.sol";
-import {GPv2Signing} from "src/contracts/mixins/GPv2Signing.sol";
+import {GPv2Order} from "contracts/libraries/GPv2Trade.sol";
+import {GPv2Signing} from "contracts/mixins/GPv2Signing.sol";
 
 import {Helper} from "./Helper.sol";
 
-import {Order as OrderLib, Sign as SignLib, Trade as TradeLib} from "test/libraries/Trade.sol";
-import {SettlementEncoder} from "test/libraries/encoders/SettlementEncoder.sol";
+import {Order as OrderLib, Sign as SignLib, Trade as TradeLib} from "../libraries/Trade.sol";
+import {SettlementEncoder} from "../libraries/encoders/SettlementEncoder.sol";
 
 contract ExtractOrder is Helper {
     using SettlementEncoder for SettlementEncoder.State;
