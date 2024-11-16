@@ -9,6 +9,7 @@ import "solidity-coverage";
 import "@nomicfoundation/hardhat-verify";
 import "hardhat-deploy";
 import "hardhat-deploy-ethers";
+import '@oasisprotocol/sapphire-hardhat';
 
 // If not set, it uses the hardhat account 0 private key.
 const deployerPrivateKey =
@@ -121,6 +122,21 @@ const config: HardhatUserConfig = {
       url: "https://sepolia.publicgoods.network",
       accounts: [deployerPrivateKey],
     },
+    sapphire: {
+      url: "https://sapphire.oasis.io",
+      accounts: [deployerPrivateKey],
+      chainId: 23294,
+    },
+    sapphireTestnet: {
+      url: "https://testnet.sapphire.oasis.io",
+      accounts: [deployerPrivateKey],
+      chainId: 23295
+    },
+    localnet: {
+      url: "http://localhost:8545",
+      accounts: [deployerPrivateKey],
+      chainid: 23293
+    }
   },
   // configuration for harhdat-verify plugin
   etherscan: {
