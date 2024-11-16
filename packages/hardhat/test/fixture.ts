@@ -2,8 +2,8 @@ import WETHArtifact from "canonical-weth/build/contracts/WETH9.json";
 import { Contract, Wallet } from "ethers";
 import { deployments, network, ethers } from "hardhat";
 
-import AuthorizerArtifact from "../../balancer/Authorizer.json";
-import VaultArtifact from "../../balancer/Vault.json";
+import AuthorizerArtifact from "../balancer/Authorizer.json";
+import VaultArtifact from "../balancer/Vault.json";
 
 export interface TestDeployment {
   deployer: Wallet;
