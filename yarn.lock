@@ -3600,6 +3600,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vennbuild/venn-dapp-sdk@npm:^0.8.5":
+  version: 0.8.5
+  resolution: "@vennbuild/venn-dapp-sdk@npm:0.8.5"
+  dependencies:
+    axios: ^1.7.7
+    ethers: ^6.13.2
+  checksum: 13c0fdc6f8148fee47ec45de047b7005cba351ede4ff217e290b74fd32cb8331748ee30b8f6978d9ae13ba09d104df8e13b233b4da3ba8dd9be3ebf7f3e74888
+  languageName: node
+  linkType: hard
+
 "@vercel/build-utils@npm:8.4.2":
   version: 8.4.2
   resolution: "@vercel/build-utils@npm:8.4.2"
@@ -4826,7 +4836,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.6.7":
+"axios@npm:^1.6.7, axios@npm:^1.7.7":
   version: 1.7.7
   resolution: "axios@npm:1.7.7"
   dependencies:
@@ -7356,7 +7366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ethers@npm:~6.13.2":
+"ethers@npm:^6.13.2, ethers@npm:~6.13.2":
   version: 6.13.4
   resolution: "ethers@npm:6.13.4"
   dependencies:
@@ -12310,6 +12320,7 @@ react@19.0.-5-rc-66855b96-20241106:
   version: 0.0.0-use.local
   resolution: "se-2@workspace:."
   dependencies:
+    "@vennbuild/venn-dapp-sdk": ^0.8.5
     husky: ~8.0.3
     lint-staged: ~13.2.2
   languageName: unknown

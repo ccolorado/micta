@@ -5,7 +5,14 @@ import { formatEther, formatUnits, parseEther, parseUnits } from "viem";
 import { sapphire } from "viem/chains";
 import { useAccount, useBalance } from 'wagmi';
 
+
+const tokens = [
+    "/usdc.webp",
+    "/eurc.webp"
+]
+
 export default function SwapInterface() {
+    const [token, setToken] = useState<string>("/usdc.webp");
     const [price, setPrice] = useState<number>(3000);
     const [amount, setAmount] = useState<number>(0);
     const [spend, setSpend] = useState<number>(0);
@@ -17,6 +24,7 @@ export default function SwapInterface() {
         const checkedValueFormatted: number = Math.floor(value * 10 ** 4) / 10 ** 4; // 4 decimal places
         const newValue = checkedValueFormatted > 0 ? checkedValueFormatted : 0
         setAmount(newValue);
+        setSpend(newValue * price);
     };
 
     const handlePriceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -41,6 +49,26 @@ export default function SwapInterface() {
                 account.isConnected &&
                 account.chainId == sapphire.id &&
                 <div className="h-96 flex flex-col gap-8 items-center">
+                    <div className="flex w-[30vw] justify-around">
+                        <div className="flex flex-col items-start justify-start">
+                            <h1>Tokens</h1>
+                            <div className="flex gap-2">
+                                <button className="hover:scale-105" onClick={(()=>setToken("/usdc.webp"))}>
+                                    <Image src="/usdc.webp" height={48} width={48} alt="USDC" />
+                                </button>
+                                <button className="hover:scale-105">
+                                    <Image src="/eurc.webp" height={48} width={48} alt="EURC" onClick={(()=>setToken("/eurc.webp"))}/>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col items-start justify-start">
+                            <h1>Destination chain</h1>
+                            <div className="flex gap-2">
+                                <Image src="/eth.png" height={48} width={48} alt="USDC" className="bg-white rounded-full" />
+                            </div>
+                        </div>
+                    </div>
                     <div className="flex gap-12 justify-between">
                         {/* price */}
                         <div>
@@ -58,7 +86,7 @@ export default function SwapInterface() {
                                     step="0.0001"
 
                                 />
-                                <Image src="/usdc.webp" height={24} width={24} alt="USDC" />
+                                <Image src={token} height={24} width={24} alt="USDC" />
                             </div>
                         </div>
                         {/* input */}
@@ -77,7 +105,7 @@ export default function SwapInterface() {
                                     step="0.0001"
 
                                 />
-                                <Image src="/usdc.webp" height={24} width={24} alt="USDC" />
+                                <Image src={token} height={24} width={24} alt="USDC" />
                             </div>
                         </div>
 
@@ -122,7 +150,7 @@ export default function SwapInterface() {
                                 </div>
                             </div> */}
 
-                    <button className={`border px-4 py-2 rounded-sm w-32 shadow-drop shadow-[24px_6px_0px_0px] hover:-skew-x-12 hover:cursor-pointer`}>Swap</button>
+                    <button className={`border px-4 py-2 rounded-sm w-32 shadow-drop shadow-[24px_6px_0px_0px] hover:-skew-x-12 hover:scale-110 hover:cursor-pointer`}>Swap</button>
                 </div>
             }
             {/* show balances when not on oasis */}

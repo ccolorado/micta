@@ -4,7 +4,8 @@ import OrderTable from './OrderTable'
 
 function OrderBook() {
     return (
-        < div id="order-book" className="flex items-center max-h-[50vh] overflow-y-auto">
+        < div id="order-book" className="flex flex-col gap-2 items-center max-h-[50vh] overflow-y-auto">
+            <h1>Order book</h1>
             <OrderTable orders={ordersData} />
         </div >
 

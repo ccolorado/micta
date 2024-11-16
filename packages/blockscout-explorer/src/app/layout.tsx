@@ -17,9 +17,12 @@ import {
   QueryClientProvider,
   QueryClient,
 } from "@tanstack/react-query";
+import "./globals.css";
 
+
+
+//  wagmi etc
 const queryClient = new QueryClient();
-
 const config = getDefaultConfig({
   appName: 'My RainbowKit App',
   projectId: 'YOUR_PROJECT_ID',
