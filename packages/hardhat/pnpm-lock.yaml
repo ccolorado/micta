@@ -92,8 +92,8 @@ devDependencies:
     specifier: ~0.4.2
     version: 0.4.2(@nomicfoundation/hardhat-ethers@3.0.8)(hardhat-deploy@0.11.45)(hardhat@2.13.1)
   hardhat-gas-reporter:
-    specifier: ~1.0.10
-    version: 1.0.10(hardhat@2.13.1)
+    specifier: ~1.0.9
+    version: 1.0.9(hardhat@2.13.1)
   prettier:
     specifier: ~3.3.3
     version: 3.3.3
@@ -2848,8 +2848,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /hardhat-gas-reporter@1.0.10(hardhat@2.13.1):
-    resolution: {integrity: sha512-02N4+So/fZrzJ88ci54GqwVA3Zrf0C9duuTyGt0CFRIh/CdNwbnTgkXkRfojOMLBQ+6t+lBIkgbsOtqMvNwikA==}
+  /hardhat-gas-reporter@1.0.9(hardhat@2.13.1):
+    resolution: {integrity: sha512-INN26G3EW43adGKBNzYWOlI3+rlLnasXTwW79YNnUhXPDa+yHESgt639dJEs37gCjhkbNKcRRJnomXEuMFBXJg==}
     peerDependencies:
       hardhat: ^2.0.2
     dependencies:
