@@ -18,6 +18,7 @@
     "verify": "hardhat etherscan-verify"
   },
   "dependencies": {
+    "@hyperlane-xyz/core": "^5.8.0",
     "@openzeppelin/contracts": "~5.0.2",
     "@typechain/ethers-v6": "~0.5.1",
     "dotenv": "~16.4.5",
