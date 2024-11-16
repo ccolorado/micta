@@ -6,6 +6,10 @@ import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Address } from "~~/components/scaffold-eth";
 
+
+const contracts = { paymaster: "0x1842a4EFf3eFd24c50B63c3CF89cECEe245Fc2bd" }
+
+
 const Home: NextPage = () => {
   const { address: connectedAddress } = useAccount();
 

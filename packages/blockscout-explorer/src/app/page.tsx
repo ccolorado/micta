@@ -42,10 +42,11 @@ export default function Home() {
         <div className="flex gap-2 ">
           {stateFunctions.map((item) => <button onClick={() => setSelect(item)} key={item} className={`border rounded p-2 hover:bg-white ${select == item && "border-dotted"}`}>{item}</button>)}
         </div>
-
         <div>
           {data?.items && <TransactionTable transactions={data?.items} selected={select} />
-          }        </div>      </main>
+          }
+        </div>
+      </main>
 
     </div >
   );

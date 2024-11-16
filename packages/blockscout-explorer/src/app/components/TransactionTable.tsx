@@ -11,7 +11,7 @@ const TransactionTable = (props: Props) => {
     return (
         <div className='text-sm'>
             <div className='flex flex-col'>
-                {props.transactions.map((transaction, index) =>  (
+                {props.transactions.map((transaction, index) => (
                     <div key={index} className='flex flex-col border p-4 m-2 justify-between'>
                         <div className='px-4'>block: {transaction.block_number}</div>
                         <div className='px-4'>method: {transaction.decoded_input.method_call}</div>

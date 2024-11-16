@@ -1,6 +1,5 @@
 export const blockscout = {
   baseUrl: "https://explorer.kinto.xyz/api/v2/",
-  apiKey: "d1224c17-2490-4f5f-9b48-6a219b1f6d10",
   queries: {
     smartcontractsQuery: "smart-contracts?q=proxy&filter=vyper%20%7C%20solidity%20%7C%20yul",
   }

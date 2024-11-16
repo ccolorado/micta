@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { isAddress, isHex } from "viem";
-import { hardhat } from "viem/chains";
+import { hardhat, mainnet, base, kinto } from "viem/chains";
 import { usePublicClient } from "wagmi";
 
 export const SearchBar = () => {
