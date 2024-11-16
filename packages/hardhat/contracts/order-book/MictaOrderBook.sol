@@ -112,7 +112,7 @@ contract MictaOrderBook {
          /// @dev Hyperlane
             IMailbox(mailboxHyperlane).dispatch{value: msg.value}(
                 421614, // 42161
-                0x6c13643B3927C57DB92c790E4E3E7Ee81e13f78C,
+                bytes32(uint256(uint160(0x6c13643B3927C57DB92c790E4E3E7Ee81e13f78C))),
                 // 0x598facE78a4302f11E3de0bee1894Da0b2Cb71F8,
                 payload
             );
