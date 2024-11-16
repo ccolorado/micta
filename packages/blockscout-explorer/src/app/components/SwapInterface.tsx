@@ -51,7 +51,7 @@ export default function SwapInterface() {
                 <div className="h-96 flex flex-col gap-8 items-center">
                     <div className="flex w-[30vw] justify-around">
                         <div className="flex flex-col items-start justify-start">
-                            <h1>Tokens</h1>
+                            <h1>Token</h1>
                             <div className="flex gap-2">
                                 <button className="hover:scale-105" onClick={(()=>setToken("/usdc.webp"))}>
                                     <Image src="/usdc.webp" height={48} width={48} alt="USDC" />

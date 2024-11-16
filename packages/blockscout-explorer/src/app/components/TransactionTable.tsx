@@ -8,33 +8,33 @@ interface Props {
 }
 
 const TransactionTable = (props: Props) => {
-    return (
-        <div className='text-sm'>
-            <div className='flex flex-col'>
-                {props.transactions.map((transaction, index) => (
-                    <div key={index} className='flex flex-col border p-4 m-2 justify-between shadow-drop shadow-[8px_0px_0px_0px]'>
-                        <div className='px-4'>block: {transaction.block_number}</div>
-                        <div className='px-4'>method: {transaction.decoded_input.method_call}</div>
-                        <div className='px-4'>from: {transaction.from.hash}</div>
-                        <div className='px-4'>to: {transaction.to.hash}</div>
-                        <div className='p-4'>parameters:
-                            <div className='flex flex-col pl-2'>
-                                <div>
-                                    name: {transaction.decoded_input.parameters.map((p) => p.name)}
-                                </div>
-                                <div>
-                                    type: {transaction.decoded_input.parameters.map((p) => p.type)}
-                                </div>
-                                <div>
-                                    value: {transaction.decoded_input.parameters.map((p) => p.value)}
-                                </div>
-                            </div>
+    const totalGasUsed = props.transactions.map((tx) => parseInt(tx.gas_used)).reduce((a, b) => a + b)
 
-                        </div>
-                    </div>
-                ))}
-            </div>
+    return (
+        <div className="o">
+            <h1>total gas used: {totalGasUsed}</h1>
+            <table className=" table-auto border-collapse">
+                <thead>
+                    <tr className="bg-two text-left">
+                        <th className="px-2 py-1">block</th>
+                        <th className="px-2 py-1">from</th>
+                        <th className="px-2 py-1">to</th>
+                        <th className="px-2 py-1">gas used</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {props.transactions.map((transaction, index) => (
+                        <tr key={index} className="odd:bg-three even:bg-five">
+                            <td className="px-2 py-1">{transaction.block_number}</td>
+                            <td className="px-2 py-1">{transaction.from.hash}</td>
+                            <td className="px-2 py-1">{transaction.to.hash}</td>
+                            <td className="px-2 py-1">{transaction.gas_used}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
+
     );
 };
 

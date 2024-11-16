@@ -6,7 +6,7 @@ import SwapInterface from "./components/SwapInterface";
 import { VennClient } from '@vennbuild/venn-dapp-sdk';
 import Image from "next/image";
 import { useState } from "react";
-import Transactions from "./components/Transactions";
+
 
 export default function Home() {
   // const vennURL = "https://dc7sea.venn.build/sign";
@@ -32,15 +32,18 @@ export default function Home() {
           <h1 className="text-4xl">Micta</h1>
           <ConnectButton />
         </div>
+
+
         <section className="max-h-[50vh]">
-          <div className="flex gap-8">
-            <button onClick={() => { setSelect(0) }} className="h-8 hover:cursor-pointer hover:underline">Orderbook</button>
-            <button onClick={() => { setSelect(1) }} className="h-8 hover:cursor-pointer hover:underline">Transactions</button>
-          </div>
+
           {select == 0 && <OrderBook />}
-          {select == 1 && <Transactions />}
+          {select == 0 && <Paymaster />}
+
         </section>
+
+
         <SwapInterface />
+
       </main >
     </div>
   );
@@ -48,3 +51,19 @@ export default function Home() {
 
 
 
+// type Response = {
+//   items: Transaction[]
+// }
+// const paymasterQuery = "https://explorer.kinto.xyz/api/v2/addresses/0x1842a4EFf3eFd24c50B63c3CF89cECEe245Fc2bd/transactions?filter=to%20%7C%20from"
+{/* {account.isConnected && <div>
+  {data?.items && <TransactionTable transactions={data?.items} selected={""} />}
+</div>} */}
+
+// const [data, setData] = useState<Response>();
+// useEffect(() => {
+//   fetch(paymasterQuery)
+//     .then(response => response.json())
+//     .then(json => setData(json))
+//     .catch(error => console.error(error));
+// }, []);
+// console.log(data)
