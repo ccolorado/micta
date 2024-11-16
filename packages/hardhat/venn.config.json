@@ -1,0 +1,10 @@
+{
+    "networks": {
+        "arb-sepolia": {
+            "contracts": {
+                "MictaOrderBook": "0x1234abcd1234abcd1234abcd1234abcd1234abcd",
+                "MictaExecuteOrder": "0x1234abcd1234abcd1234abcd1234abcd1234abcd"
+            }
+        }
+    }
+}

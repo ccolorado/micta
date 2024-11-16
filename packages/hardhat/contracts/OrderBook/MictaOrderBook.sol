@@ -22,6 +22,7 @@ contract MictaOrderBook is VennFirewallConsumer {
     IERC20 public usdc; // USDC token contract
     address public admin;
     address public mailboxHyperlane;
+    address public recipientAddress;
 
     mapping(uint256 => Order) public orders; // Store all orders
     mapping(address => uint256[]) public userOrders; // Track user's order IDs
@@ -105,6 +106,11 @@ contract MictaOrderBook is VennFirewallConsumer {
         revert("Direct ETH transfers not allowed");
     }
 
+    function setRecipientAddress(address _recipientAddress) external {
+        require(msg.sender == admin, "Not admin");
+        recipientAddress = _recipientAddress;
+    }
+
     // Hyperlane message
     function sendOrderToEvm(bytes memory hash_digest) public payable {
          bytes memory payload = abi.encode(
@@ -114,7 +120,7 @@ contract MictaOrderBook is VennFirewallConsumer {
          /// @dev Hyperlane
          IMailbox(mailboxHyperlane).dispatch{value: msg.value}(
                 421614, // 42161
-                bytes32(uint256(uint160(0x598facE78a4302f11E3de0bee1894Da0b2Cb71F8))), // 0x598facE78a4302f11E3de0bee1894Da0b2Cb71F8, 0x979Ca5202784112f4738403dBec5D0F3B9daabB9
+                bytes32(uint256(uint160(recipientAddress))), // 0x598facE78a4302f11E3de0bee1894Da0b2Cb71F8, 0x979Ca5202784112f4738403dBec5D0F3B9daabB9
                 payload
             );
     }
