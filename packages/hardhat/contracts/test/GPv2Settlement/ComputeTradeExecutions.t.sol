@@ -9,8 +9,8 @@ import {GPv2Signing} from "contracts/mixins/GPv2Signing.sol";
 
 import {GPv2Transfer, Helper, SettlementEncoder} from "./Helper.sol";
 
-import {Order} from "test/libraries/Order.sol";
-import {Registry, TokenRegistry} from "test/libraries/encoders/TokenRegistry.sol";
+import {Order} from "../libraries/Order.sol";
+import {Registry, TokenRegistry} from "../libraries/encoders/TokenRegistry.sol";
 
 abstract contract BaseComputeTradeExecutions is Helper {
     using TokenRegistry for TokenRegistry.State;

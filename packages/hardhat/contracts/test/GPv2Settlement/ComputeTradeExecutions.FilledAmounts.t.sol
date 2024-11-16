@@ -2,7 +2,7 @@
 pragma solidity ^0.8.26;
 
 import {BaseComputeTradeExecutions, GPv2Order, SettlementEncoder} from "./ComputeTradeExecutions.t.sol";
-import {Order} from "test/libraries/Order.sol";
+import {Order} from "../libraries/Order.sol";
 
 contract OrderFilledAmounts is BaseComputeTradeExecutions {
     using GPv2Order for GPv2Order.Data;

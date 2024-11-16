@@ -6,8 +6,8 @@ import {Helper} from "./Helper.sol";
 import {GPv2Order, IERC20} from "contracts/libraries/GPv2Order.sol";
 
 import {Helper} from "./Helper.sol";
-import {Eip712} from "test/libraries/Eip712.sol";
-import {Order as OrderLib} from "test/libraries/Order.sol";
+import {Eip712} from "../libraries/Eip712.sol";
+import {Order as OrderLib} from "../libraries/Order.sol";
 
 contract Order is Helper {
     using Eip712 for GPv2Order.Data;

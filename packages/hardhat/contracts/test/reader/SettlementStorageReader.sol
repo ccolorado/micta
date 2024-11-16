@@ -7,7 +7,7 @@ import {GPv2AllowListAuthentication} from "contracts/GPv2AllowListAuthentication
 import {GPv2Settlement, IVault, StorageAccessible} from "contracts/GPv2Settlement.sol";
 import {SettlementStorageReader} from "contracts/reader/SettlementStorageReader.sol";
 
-import {Order} from "test/libraries/Order.sol";
+import {Order} from "../libraries/Order.sol";
 
 contract SettlementStorageReaderTest is Test {
     GPv2Settlement private settlement;

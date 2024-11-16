@@ -3,8 +3,8 @@ pragma solidity ^0.8;
 
 import {Test, Vm} from "forge-std/Test.sol";
 
-import {GPv2Order, GPv2Signing, GPv2Trade, IERC20, Order, Trade} from "test/libraries/Trade.sol";
-import {SettlementEncoder} from "test/libraries/encoders/SettlementEncoder.sol";
+import {GPv2Order, GPv2Signing, GPv2Trade, IERC20, Order, Trade} from "../libraries/Trade.sol";
+import {SettlementEncoder} from "../libraries/encoders/SettlementEncoder.sol";
 
 contract Harness {
     function extractOrderTest(IERC20[] calldata tokens, GPv2Trade.Data calldata trade)

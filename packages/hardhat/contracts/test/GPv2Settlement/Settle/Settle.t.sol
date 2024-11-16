@@ -5,7 +5,7 @@ import {Helper} from "../Helper.sol";
 
 import {GPv2Interaction, GPv2Settlement} from "contracts/GPv2Settlement.sol";
 
-import {SettlementEncoder} from "test/libraries/encoders/SettlementEncoder.sol";
+import {SettlementEncoder} from "../../libraries/encoders/SettlementEncoder.sol";
 
 // solhint-disable func-name-mixedcase
 contract Settle is Helper {

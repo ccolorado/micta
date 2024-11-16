@@ -14,8 +14,8 @@ import {
     IVault
 } from "contracts/GPv2Settlement.sol";
 
-import {SettlementEncoder} from "test/libraries/encoders/SettlementEncoder.sol";
-import {SwapEncoder} from "test/libraries/encoders/SwapEncoder.sol";
+import {SettlementEncoder} from "../libraries/encoders/SettlementEncoder.sol";
+import {SwapEncoder} from "../libraries/encoders/SwapEncoder.sol";
 
 // solhint-disable func-name-mixedcase
 abstract contract Helper is Test {

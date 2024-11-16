@@ -7,9 +7,9 @@ import {GPv2Order, GPv2Signing, IERC20} from "contracts/mixins/GPv2Signing.sol";
 
 import {Harness, Helper} from "./Helper.sol";
 
-import {Bytes} from "test/libraries/Bytes.sol";
-import {Order} from "test/libraries/Order.sol";
-import {SettlementEncoder} from "test/libraries/encoders/SettlementEncoder.sol";
+import {Bytes} from "../libraries/Bytes.sol";
+import {Order} from "../libraries/Order.sol";
+import {SettlementEncoder} from "../libraries/encoders/SettlementEncoder.sol";
 
 contract CalldataManipulation is Helper {
     using SettlementEncoder for SettlementEncoder.State;

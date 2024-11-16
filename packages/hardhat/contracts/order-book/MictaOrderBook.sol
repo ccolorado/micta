@@ -2,7 +2,7 @@
 // Deploy in Oasis sapphire(mainnet)
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "../interfaces/IERC20.sol";
 import {IMailbox} from "@hyperlane-xyz/core/contracts/interfaces/IMailbox.sol";
 
 contract MictaOrderBook {

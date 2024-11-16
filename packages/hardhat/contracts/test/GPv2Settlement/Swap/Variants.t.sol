@@ -5,8 +5,8 @@ import {GPv2Order, GPv2Settlement, GPv2Signing, IERC20, IVault} from "contracts/
 
 import {Helper} from "../Helper.sol";
 
-import {Order} from "test/libraries/Order.sol";
-import {SwapEncoder} from "test/libraries/encoders/SwapEncoder.sol";
+import {Order} from "../../libraries/Order.sol";
+import {SwapEncoder} from "../../libraries/encoders/SwapEncoder.sol";
 
 abstract contract Variant is Helper {
     using SwapEncoder for SwapEncoder.State;

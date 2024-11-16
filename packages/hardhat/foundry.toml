@@ -6,7 +6,7 @@ libs = ["node_modules", "lib"]
 # Compiler settings
 via_ir = false
 optimizer = true
-optimizer_runs = 1000000
+optimizer_runs = 1
 evm_version = "cancun"
 
 deny_warnings = true

@@ -5,7 +5,7 @@ import {Test} from "forge-std/Test.sol";
 
 import {GPv2Order, GPv2Signing, GPv2Trade, IERC20} from "contracts/mixins/GPv2Signing.sol";
 
-import {Sign} from "test/libraries/Sign.sol";
+import {Sign} from "../libraries/Sign.sol";
 
 contract Harness is GPv2Signing {
     function recoverOrderFromTradeTest(IERC20[] calldata tokens, GPv2Trade.Data calldata trade)

@@ -2,7 +2,7 @@
 pragma solidity ^0.8;
 
 import {Harness, Helper} from "./Helper.sol";
-import {Eip712} from "test/libraries/Eip712.sol";
+import {Eip712} from "../libraries/Eip712.sol";
 
 contract DomainSeparator is Helper {
     function test_TYPE_HASH_matches_the_EIP_712_order_type_hash() public view {

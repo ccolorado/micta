@@ -6,8 +6,8 @@ import {GPv2Signing} from "contracts/mixins/GPv2Signing.sol";
 
 import {Helper} from "./Helper.sol";
 
-import {Order as OrderLib} from "test/libraries/Order.sol";
-import {SettlementEncoder} from "test/libraries/encoders/SettlementEncoder.sol";
+import {Order as OrderLib} from "../libraries/Order.sol";
+import {SettlementEncoder} from "../libraries/encoders/SettlementEncoder.sol";
 
 contract ExtractOrder is Helper {
     using SettlementEncoder for SettlementEncoder.State;

@@ -4,7 +4,7 @@ pragma solidity ^0.8;
 import {GPv2Order} from "contracts/libraries/GPv2Order.sol";
 
 import {Helper} from "./Helper.sol";
-import {Order} from "test/libraries/Order.sol";
+import {Order} from "../libraries/Order.sol";
 
 enum FreeFunctionVariant {
     FreeFilledAmountStorage,
