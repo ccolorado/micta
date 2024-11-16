@@ -86,11 +86,11 @@ devDependencies:
     specifier: ~2.13.1
     version: 2.13.1(ts-node@10.9.2)(typescript@5.5.4)
   hardhat-deploy:
-    specifier: ~0.11.45
-    version: 0.11.45
+    specifier: ~0.11.26
+    version: 0.11.26
   hardhat-deploy-ethers:
     specifier: ~0.4.2
-    version: 0.4.2(@nomicfoundation/hardhat-ethers@3.0.8)(hardhat-deploy@0.11.45)(hardhat@2.13.1)
+    version: 0.4.2(@nomicfoundation/hardhat-ethers@3.0.8)(hardhat-deploy@0.11.26)(hardhat@2.13.1)
   hardhat-gas-reporter:
     specifier: ~1.0.9
     version: 1.0.9(hardhat@2.13.1)
@@ -2803,7 +2803,7 @@ packages:
       uglify-js: 3.19.3
     dev: true
 
-  /hardhat-deploy-ethers@0.4.2(@nomicfoundation/hardhat-ethers@3.0.8)(hardhat-deploy@0.11.45)(hardhat@2.13.1):
+  /hardhat-deploy-ethers@0.4.2(@nomicfoundation/hardhat-ethers@3.0.8)(hardhat-deploy@0.11.26)(hardhat@2.13.1):
     resolution: {integrity: sha512-AskNH/XRYYYqPT94MvO5s1yMi+/QvoNjS4oU5VcVqfDU99kgpGETl+uIYHIrSXtH5sy7J6gyVjpRMf4x0tjLSQ==}
     peerDependencies:
       '@nomicfoundation/hardhat-ethers': ^3.0.2
@@ -2812,11 +2812,11 @@ packages:
     dependencies:
       '@nomicfoundation/hardhat-ethers': 3.0.8(ethers@5.7.2)(hardhat@2.13.1)
       hardhat: 2.13.1(ts-node@10.9.2)(typescript@5.5.4)
-      hardhat-deploy: 0.11.45
+      hardhat-deploy: 0.11.26
     dev: true
 
-  /hardhat-deploy@0.11.45:
-    resolution: {integrity: sha512-aC8UNaq3JcORnEUIwV945iJuvBwi65tjHVDU3v6mOcqik7WAzHVCJ7cwmkkipsHrWysrB5YvGF1q9S1vIph83w==}
+  /hardhat-deploy@0.11.26:
+    resolution: {integrity: sha512-GvnkD8v6q0coCQbwZNeUcO3ab1zz36FKsqzNdm6EcnVoAfXVkFpdA0pgJ7/Rk3+Lv5709xOtbneFOyoukUOhWQ==}
     dependencies:
       '@ethersproject/abi': 5.7.0
       '@ethersproject/abstract-signer': 5.7.0
