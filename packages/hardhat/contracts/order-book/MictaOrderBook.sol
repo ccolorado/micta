@@ -45,7 +45,7 @@ contract MictaOrderBook {
     }
 
     // Place a buy order for ETH using USDC
-    function placeBuyOrder(uint256 _ethAmount, uint256 _usdcPrice, bytes orderHash) external returns (uint256) {
+    function placeBuyOrder(uint256 _ethAmount, uint256 _usdcPrice, bytes memory orderHash) external returns (uint256) {
         require(_ethAmount > 0, "ETH amount must be greater than zero");
         require(_usdcPrice > 0, "USDC price must be greater than zero");
 
@@ -104,7 +104,7 @@ contract MictaOrderBook {
     }
 
     // Hyperlane message
-    function sendOrderToEvm(bytes hash_digest) internal {
+    function sendOrderToEvm(bytes memory hash_digest) internal {
          bytes memory payload = abi.encode(
             msg.sender,
             hash_digest
