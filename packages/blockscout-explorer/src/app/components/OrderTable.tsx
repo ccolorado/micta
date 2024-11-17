@@ -5,10 +5,10 @@ interface Props {
     orders: Order[];
 }
 
-const OrderTable = (props: Props) => {
+export function OrderTable(props: Props) {
     return (
-        <div className="overflow-x-auto">
-            <table className="min-w-full table-auto border-collapse">
+        <div className="text-xs overflow-x-auto">
+            <table className="table-auto border-collapse">
                 <thead>
                     <tr className="bg-two text-left">
                         <th className="px-2 py-1">Order Kind</th>
@@ -24,7 +24,7 @@ const OrderTable = (props: Props) => {
                 </thead>
                 <tbody>
                     {props.orders.map((order, index) => (
-                        <tr key={order.sellToken + order.buyToken + order.validTo + index} className="odd:bg-three even:bg-five">
+                        <tr key={index} className="odd:bg-three even:bg-five">
                             <td className="px-2 py-1">{order.kind === OrderKind.SELL ? 'Sell' : 'Buy'}</td>
                             <td className="px-2 py-1">{order.sellToken}</td>
                             <td className="px-2 py-1">{order.buyToken}</td>
