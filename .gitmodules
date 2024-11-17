@@ -1,0 +1,10 @@
+[submodule "univ4/lib/forge-std"]
+	path = univ4/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "univ4/lib/periphery-next"]
+	path = univ4/lib/periphery-next
+	url = https://github.com/Uniswap/periphery-next
+[submodule "hyperlane-monorepo"]
+	path = hyperlane-monorepo
+	url = https://github.com/hyperlane-xyz/hyperlane-monorepo.git
+	branch = dan/eip1967

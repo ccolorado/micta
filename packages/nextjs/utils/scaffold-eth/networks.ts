@@ -16,6 +16,8 @@ export const RPC_CHAIN_NAMES: Record<number, string> = {
   [chains.mainnet.id]: "eth-mainnet",
   [chains.goerli.id]: "eth-goerli",
   [chains.sepolia.id]: "eth-sepolia",
+  [chains.sapphire.id]: "sapphire",
+  [chains.sapphireTestnet.id]: "sapphire-sepolia",
   [chains.optimism.id]: "opt-mainnet",
   [chains.optimismGoerli.id]: "opt-goerli",
   [chains.optimismSepolia.id]: "opt-sepolia",
@@ -63,6 +65,12 @@ export const NETWORKS_EXTRA_DATA: Record<string, ChainAttributes> = {
   [chains.optimismSepolia.id]: {
     color: "#f01a37",
   },
+  [chains.sapphire.id]: {
+    color: "#0400E1",
+  }
+  [chains.sapphireTestnet.id]: {
+    color: "#0400E2",
+  }
   [chains.optimism.id]: {
     color: "#f01a37",
   },

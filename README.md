@@ -1,3 +1,37 @@
+# Micta
+
+## Technologies
+* Hyperlane
+* Blockscout
+* Cowswap
+
+### Hyperlane
+https://github.com/hyperlane-xyz/hyperlane-registry/tree/main/chains/arbitrum
+https://github.com/hyperlane-xyz/hyperlane-registry/tree/main/chains/arbitrumsepolia
+
+### Networks 
+
+####  Oasis / saphire https://docs.oasis.io/dapp/sapphire/network
+CLI : https://docs.hyperlane.xyz/docs/reference/cli
+
+|                    | Mainnet        | Testnet                | Localnet                |
+| Network name       | sapphire       | sapphire-testnet       | sapphire-localnet       |
+| Long network name  | Oasis Sapphire | Oasis Sapphire Testnet | Oasis Sapphire Localnet |
+| Chain ID (Hex)     | 0x5afe         | 0x5aff                 | 0x5afd                  |
+| Chain ID (decimal) | 23294          | 23295                  | 23293                   |
+Mainnet RPCs
+https://sapphire.oasis.io
+wss://sapphire.oasis.io/ws
+
+Testnet RPCs
+https://testnet.sapphire.oasis.io
+wss://testnet.sapphire.oasis.io/ws
+
+TODO:  PR sapphire to https://github.com/hyperlane-xyz/hyperlane-registry/tree/main/chains
+
+Vigil contract explanation:
+https://docs.oasis.io/dapp/sapphire/quickstart/#get-the-contract
+
 # 🏗 Scaffold-ETH 2
 
 <h4 align="center">
@@ -78,3 +112,5 @@ To know more about its features, check out our [website](https://scaffoldeth.io)
 We welcome contributions to Scaffold-ETH 2!
 
 Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+
+
