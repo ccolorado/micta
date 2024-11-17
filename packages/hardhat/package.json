@@ -18,6 +18,8 @@
     "verify": "hardhat etherscan-verify"
   },
   "dependencies": {
+    "@hyperlane-xyz/core": "^5.8.0",
+    "@ironblocks/firewall-consumer": "^1.0.17",
     "@openzeppelin/contracts": "~5.0.2",
     "@typechain/ethers-v6": "~0.5.1",
     "dotenv": "~16.4.5",
@@ -44,7 +46,7 @@
     "eslint-config-prettier": "~8.10.0",
     "eslint-plugin-prettier": "~5.2.1",
     "ethers": "~6.13.2",
-    "hardhat": "~2.22.10",
+    "hardhat": "^2.22.15",
     "hardhat-deploy": "~0.12.4",
     "hardhat-deploy-ethers": "~0.4.2",
     "hardhat-gas-reporter": "~2.2.1",
