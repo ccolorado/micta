@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 pragma solidity ^0.8;
 
-import {Script} from "forge-std/Script.sol";
+// import {Script} from "forge-std/Script.sol";
 
 contract NetworksJson is Script {
     string public constant PATH = "./networks.json";
