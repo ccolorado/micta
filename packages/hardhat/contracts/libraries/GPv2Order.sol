@@ -224,7 +224,7 @@ library GPv2Order {
     /// @return owner The address of the user who owns this order.
     /// @return validTo The epoch time at which the order will stop being valid.
     function extractOrderUidParams(
-        bytes calldata orderUid
+        bytes storage orderUid
     )
         internal
         pure

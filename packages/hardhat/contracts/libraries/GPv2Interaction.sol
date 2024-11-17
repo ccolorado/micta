@@ -15,10 +15,10 @@ library GPv2Interaction {
     /// @dev Execute an arbitrary contract interaction.
     ///
     /// @param interaction Interaction data.
-    function execute(Data calldata interaction) internal {
+    function execute(Data storage interaction) internal {
         address target = interaction.target;
         uint256 value = interaction.value;
-        bytes calldata callData = interaction.callData;
+        bytes storage callData = interaction.callData;
 
         // NOTE: Use assembly to call the interaction instead of a low level
         // call for two reasons:
